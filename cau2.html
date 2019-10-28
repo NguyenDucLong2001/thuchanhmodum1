@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    let b = [1,2,3,4];
+    let index = parseFloat(prompt("nhap so"));
+    function tryRemoveFromArray(arr,index1) {
+        for (i=index1;i<arr.length;i++){
+                arr[i] = arr[i+1];
+            }
+        arr.length --;
+        for(i=0;i<arr.length;i++){
+            document.write(arr[i] + " ");
+        }
+    }
+    tryRemoveFromArray(b,index);
+</script>
+</body>
+</html>

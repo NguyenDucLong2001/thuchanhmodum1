@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    let a = [10, 5, 2, 8, -1, 6];
+    let min = a[0];
+   function findMinScore(number) {
+       for (i=0;i<=number.length;i++)
+       if (min > number[i]){
+           min = number[i];
+       }
+       return min;
+   }
+   alert("Min mang " + findMinScore(a));
+</script>
+</body>
+</html>

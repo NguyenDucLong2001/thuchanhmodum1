@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<script>
+    let Rectangle = function (x,y,width,height,color) {
+        this.x = x;
+        this.y = y;
+        this.width = width;
+        this.height = height;
+        this.color = color;
+        this.render = function () {
+           let c = document.getElementById("myCanvas");
+           let ctx = c.getContext("2d");
+           ctx.fillStyle = this.color;
+           ctx.fillRect(this.x,this.y,this.width,this.height);
+        }
+    }
+    let abc = new Rectangle(10,10,200,100," #ffcc00");
+    abc.render();
+</script>
+</body>
+</html>
